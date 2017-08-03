@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaibaMvvmAdapter", "SaibaMvvmAdapter\SaibaMvvmAdapter.csproj", "{70A17590-6D3E-4217-951D-77E7D722D1B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{4C3D0E9B-23F3-4965-9B79-36AB575C1699}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{70A17590-6D3E-4217-951D-77E7D722D1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70A17590-6D3E-4217-951D-77E7D722D1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70A17590-6D3E-4217-951D-77E7D722D1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C3D0E9B-23F3-4965-9B79-36AB575C1699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C3D0E9B-23F3-4965-9B79-36AB575C1699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C3D0E9B-23F3-4965-9B79-36AB575C1699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C3D0E9B-23F3-4965-9B79-36AB575C1699}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
