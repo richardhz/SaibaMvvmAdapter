@@ -12,11 +12,10 @@ namespace UnitTests
     {
         public PocoTestAdapter(PocoTestClass model ) : base(model)
         {
-            InitializeCollections(model);
-            InitializeComplexProperties(model);
         }
 
-        private void InitializeCollections(PocoTestClass model)
+        
+        protected override void InitializeCollectionProperties(PocoTestClass model)
         {
             //The creation of adapter list items is not tested here, this would be a user test and not a library test.
             Items = new ChangeTrackingCollection<PocoListItemAdapter>(model.Items.Select(i => new PocoListItemAdapter(i))); 
@@ -24,7 +23,7 @@ namespace UnitTests
             RegisterCollection(Items, model.Items);
         }
 
-        private void InitializeComplexProperties(PocoTestClass model)
+        protected override void InitializeComplexProperties(PocoTestClass model)
         {
             ComplexProp = new PocoListItemAdapter(model.ComplexProp);
             RegisterComplex(ComplexProp);

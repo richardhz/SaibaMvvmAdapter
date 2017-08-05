@@ -20,6 +20,16 @@ namespace SaibaMvvmAdapter
             Model = model;
             _changedProperties = new Dictionary<string, object>();
             _trackingObjects = new List<IRevertibleChangeTracking>();
+            InitializeComplexProperties(model);
+            InitializeCollectionProperties(model);
+        }
+
+        protected virtual void InitializeComplexProperties(T model)
+        {
+        }
+
+        protected virtual void InitializeCollectionProperties(T model)
+        {
         }
 
         public T Model { get; }
