@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace SaibaMvvmAdapter
 {
-    public class ModelAdapter<T> : ViewModelBase, IRevertibleChangeTracking
+    public abstract class ModelAdapter<T> : ViewModelBase, IRevertibleChangeTracking
     {
         private Dictionary<string, object> _changedProperties;
         private List<IRevertibleChangeTracking> _trackingObjects;
